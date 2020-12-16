@@ -1,0 +1,10 @@
+<h2>New Hiker</h2>
+<%= form_for @hiker do |f|%>
+    <%= f.label :name %>
+    <%= f.text_field :name %><br>
+    
+    <%= f.submit %>
+<%end%>
+
+<h4>Hike on!</h4>
+<%= image_tag("hiker.jpg", width: '700')%>

@@ -1,0 +1,6 @@
+<h2>All Hikers</h2>
+<ul>
+    <%@hikers.each do |hiker|%>
+        <li><%= link_to hiker.name, hiker%></li><br>
+    <%end%>
+</ul>

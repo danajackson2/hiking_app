@@ -1,0 +1,5 @@
+<h2>All trails:</h2>
+<%@trails.each do |tr|%>
+    <%=link_to tr.name, tr%><br>
+<%end%>
+<%= image_tag("trails.jpg", width: '700') %>

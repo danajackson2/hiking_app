@@ -1,0 +1,10 @@
+<h2>Make a new Trip</h2>
+<%= form_for @trip do |f|%>
+    <%=f.label :date%>
+    <%=f.date_field :date%><br>
+    Date must be within 15 days from today.
+    <h3>Hiker: </h3><%= f.collection_select :hiker_id, @hikers, :id, :name %><br>
+    <h3>Trail: </h3><%= f.collection_select :trail_id, @trails, :id, :name %><br>
+
+    <%=f.submit%>
+<%end%>

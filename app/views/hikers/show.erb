@@ -1,0 +1,12 @@
+<h2>My hiker's page</h2>
+
+<h3>Name: <%=@hiker.name%></h3>
+<h3>Trips:</h3>
+
+    <% @hiker.trips.each do |trip|%>
+        <ul>
+            Date: <%=trip.date.strftime("%F")%><br>
+            Trail: <%=trip.trail.name%><br>
+            <%=link_to "View Trip", trip%><br>
+        </ul>
+    <%end%>

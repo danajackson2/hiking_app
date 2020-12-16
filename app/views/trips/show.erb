@@ -1,0 +1,10 @@
+<h2>Details of your trip</h2>
+
+<h3>Date: <%= @trip.date.strftime("%F") %></h3>
+<h3>Hiker: <%=@trip.hiker.name%></h3>
+<h3>Trail: <%=@trip.trail.name%></h3>
+<h3>Length: <%=@trip.trail.length%> miles</h3>
+<h3>Location: <%= @trip.trail.location%></h3>
+<h3>Weather: </h3> <p><%= @trip.weather %></p>
+
+<%=image_tag("shasta.jpg", width: "500")%>

@@ -1,0 +1,14 @@
+<h3>Edit an Existing Trip</h3>
+
+<%= form_for @trip do |f|%>
+    <%=f.label :date%>
+    <%=f.date_field :date%><br>
+
+    <%=f.label :hiker_id%>
+    <%=f.number_field :hiker_id%><br>
+
+    <%=f.label :trail_id%>
+    <%=f.number_field :trail_id%><br>
+    
+    <%=f.submit%>
+<%end%>
