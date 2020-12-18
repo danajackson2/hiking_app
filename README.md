@@ -1,24 +1,11 @@
-# README
+# HIKER-APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a very simple app to practice making an app in Ruby on Rails. It has hikers and trails, with a trip to connect the two models.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+How to Use:
+* Fork and clone down this repo onto your local machine
+* Run `bundle install`
+* Run `rails db:migrate`
+* Run `rails db:seed`
+* Start up a local server (`rails s`)
+* In your browser, navigate to https://localhost:3000/hiker-app
